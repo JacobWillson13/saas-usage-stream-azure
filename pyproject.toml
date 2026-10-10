@@ -1,0 +1,33 @@
+[project]
+name = "saas-usage-stream-azure"
+version = "0.1.0"
+description = "Streaming analytics pipeline for a generic SaaS usage dataset on Azure PostgreSQL."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "duckdb>=1.1",
+    "psycopg[binary,pool]>=3.2",
+    "python-dotenv>=1.0",
+    "pyyaml>=6.0",
+    "river>=0.22",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pillow>=12.3.0",
+    "ruff>=0.6",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/saas_stream"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
