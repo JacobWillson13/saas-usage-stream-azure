@@ -1,0 +1,48 @@
+price_version:
+  v3: legacy
+  v4: current
+
+plan_code:
+  personal: free
+  starter: basic
+  standard: team
+  premium: pro
+  enterprise: business
+
+signup_plan:
+  trial: trial
+
+change_source:
+  dunning: collections
+  migration_voluntary: voluntary_migration
+  sales: assisted_sale
+  self_serve: self_service
+  trial_end: trial_resolution
+
+feature:
+  exit_node: internet_egress
+  flow_logs: traffic_history
+  funnel: public_endpoint
+  jit_access: temporary_access
+  log_streaming: event_export
+  mdm_config: device_policy
+  posture_integration: compliance_signals
+  scim: identity_sync
+  ssh: secure_shell
+  subnet_router: private_network_connector
+
+license_event_type:
+  auto_seat_added: auto_license_added
+  seat_occupied: license_used
+  seat_vacated: license_released
+  seats_set: licenses_set
+
+charge_status:
+  failed: failed
+  succeeded: succeeded
+
+invoice_status:
+  issued: issued
+  open: open
+  paid: paid
+  uncollectible: uncollectible
